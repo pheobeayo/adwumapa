@@ -2,7 +2,7 @@ import Image from "next/image";
 import NotificationIcon from "../../assets/alert/notification.svg";
 import profileimage from "../../assets/alert/profileimage.svg";
 import { useEffect, useState } from "react";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
 
 
 const Alert = () => {
@@ -15,7 +15,7 @@ const Alert = () => {
       <div className="flex justify-between space-x-4">
         {/* Connect wallet button */}
         <button className=" w-full text-white h-[44px] rounded-[12px]">
-        <ConnectButton/>
+        <w3m-button />
         </button>
 
          

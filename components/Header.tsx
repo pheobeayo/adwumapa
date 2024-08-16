@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useConnect } from "wagmi";
@@ -39,12 +39,8 @@ export default function Header() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {!hideConnectBtn && (
-                  <ConnectButton
-                    showBalance={{
-                      smallScreen: true,
-                      largeScreen: false,
-                    }}
-                  />
+                  <w3m-button 
+                    />
                 )}
               </div>
             </div>
