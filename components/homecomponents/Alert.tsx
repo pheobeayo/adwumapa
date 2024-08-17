@@ -2,7 +2,7 @@ import Image from "next/image";
 import NotificationIcon from "../../assets/alert/notification.svg";
 import profileimage from "../../assets/alert/profileimage.svg";
 import { useEffect, useState } from "react";
-import { useWeb3Modal } from "@web3modal/wagmi/react";
+
 
 
 const Alert = () => {
