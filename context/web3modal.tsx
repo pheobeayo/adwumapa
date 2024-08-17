@@ -26,6 +26,13 @@ const metadata = {
 const ethersConfig = defaultConfig({
   /*Required*/
   metadata,
+  
+  auth: {
+    email: true, // default to true
+    socials: ['google', 'x', 'github', 'discord', 'apple', 'facebook', 'farcaster'],
+    showWallets: true, // default to true
+    walletFeatures: true // default to true
+  },
 
   /*Optional*/
   enableEIP6963: true, // true by default
@@ -33,6 +40,8 @@ const ethersConfig = defaultConfig({
   enableCoinbase: true, // true by default
   rpcUrl: '...', // used for the Coinbase SDK
   defaultChainId: 1 // used for the Coinbase SDK
+
+ 
 })
 
 // 5. Create a AppKit instance
